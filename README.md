@@ -1,4 +1,4 @@
-# digitdisplay
+# digitdisplay.h
 
 ## Arduino-Library for 7-Digit-Displays.
 This Library was designed for Hawlett-Paclard(HP) 5082-7653 displays, but can also be used with other displays if wired correctly.
