@@ -14,10 +14,10 @@ This Library was designed for Hawlett-Paclard(HP) 5082-7653 displays, but can al
 There are more functions in this library which were created for the il2p-project, which this library was written for.
 
 ## Wireing:
-Pin1: Top
-Pin2: TopRight
-Pin3: BottomRight
-Pin4: Bottom
-Pin5: BottomLeft
-Pin6: TopLeft
+Pin1: Top </br>
+Pin2: TopRight </br>
+Pin3: BottomRight </br>
+Pin4: Bottom </br>
+Pin5: BottomLeft </br>
+Pin6: TopLeft </br>
 Pin7: Center
