@@ -1,8 +1,8 @@
 /*
   digitdisplay.cpp - Library for 7-digit-displays
   Created by Liam A. Clark, November 2, 2023.
-  Updated by Liam A. Clark, April 15, 2025.
-  Version: 2.2.1 beta
+  Updated by Liam A. Clark, April 30, 2025.
+  Version: 2.2.3 beta
 */
 
 #include "digitdisplay.h"
@@ -40,7 +40,7 @@ void DigitDisplay::begin() {
 // 9: 1,2,3,4,6,7
 
 void DigitDisplay::displayNumber(int number){
-    if(number == 0){
+    if(number == 0){                    // 0
         digitalWrite(_pin1, HIGH);
         digitalWrite(_pin2, HIGH);
         digitalWrite(_pin3, HIGH);
@@ -49,7 +49,7 @@ void DigitDisplay::displayNumber(int number){
         digitalWrite(_pin6, HIGH);
         digitalWrite(_pin7, LOW);
     }
-    if(number == 1){
+    if(number == 1){                    // 1
         digitalWrite(_pin1, LOW);
         digitalWrite(_pin2, HIGH);
         digitalWrite(_pin3, HIGH);
@@ -58,7 +58,7 @@ void DigitDisplay::displayNumber(int number){
         digitalWrite(_pin6, LOW);
         digitalWrite(_pin7, LOW);
     }
-    if(number == 2){
+    if(number == 2){                    // 2
         digitalWrite(_pin1, HIGH);
         digitalWrite(_pin2, HIGH);
         digitalWrite(_pin3, LOW);
@@ -67,7 +67,7 @@ void DigitDisplay::displayNumber(int number){
         digitalWrite(_pin6, LOW);
         digitalWrite(_pin7, HIGH);
     }
-    if(number == 3){
+    if(number == 3){                    // 3
         digitalWrite(_pin1, HIGH);
         digitalWrite(_pin2, HIGH);
         digitalWrite(_pin3, HIGH);
@@ -76,7 +76,7 @@ void DigitDisplay::displayNumber(int number){
         digitalWrite(_pin6, LOW);
         digitalWrite(_pin7, HIGH);
     }
-    if(number == 4){
+    if(number == 4){                    // 4
         digitalWrite(_pin1, LOW);
         digitalWrite(_pin2, HIGH);
         digitalWrite(_pin3, HIGH);
@@ -85,7 +85,7 @@ void DigitDisplay::displayNumber(int number){
         digitalWrite(_pin6, HIGH);
         digitalWrite(_pin7, HIGH);
     }
-    if(number == 5){
+    if(number == 5){                    // 5
         digitalWrite(_pin1, HIGH);
         digitalWrite(_pin2, LOW);
         digitalWrite(_pin3, HIGH);
@@ -94,7 +94,7 @@ void DigitDisplay::displayNumber(int number){
         digitalWrite(_pin6, HIGH);
         digitalWrite(_pin7, HIGH);
     }
-    if(number == 6){
+    if(number == 6){                    // 6
         digitalWrite(_pin1, HIGH);
         digitalWrite(_pin2, LOW);
         digitalWrite(_pin3, HIGH);
@@ -103,7 +103,7 @@ void DigitDisplay::displayNumber(int number){
         digitalWrite(_pin6, HIGH);
         digitalWrite(_pin7, HIGH);
     }
-    if(number == 7){
+    if(number == 7){                    // 7
         digitalWrite(_pin1, HIGH);
         digitalWrite(_pin2, HIGH);
         digitalWrite(_pin3, HIGH);
@@ -112,7 +112,7 @@ void DigitDisplay::displayNumber(int number){
         digitalWrite(_pin6, LOW);
         digitalWrite(_pin7, LOW);
     }
-    if(number == 8){
+    if(number == 8){                    // 8
         digitalWrite(_pin1, HIGH);
         digitalWrite(_pin2, HIGH);
         digitalWrite(_pin3, HIGH);
@@ -121,7 +121,7 @@ void DigitDisplay::displayNumber(int number){
         digitalWrite(_pin6, HIGH);
         digitalWrite(_pin7, HIGH);
     }
-    if(number == 9){
+    if(number == 9){                    // 9
         digitalWrite(_pin1, HIGH);
         digitalWrite(_pin2, HIGH);
         digitalWrite(_pin3, HIGH);
@@ -167,6 +167,33 @@ void DigitDisplay::displayOther(int element_id){
         digitalWrite(_pin4, LOW);
         digitalWrite(_pin5, HIGH);
         digitalWrite(_pin6, HIGH);
+        digitalWrite(_pin7, HIGH);
+    }
+    if(element_id == 4){                // Element 4 -> "R"
+        digitalWrite(_pin1, HIGH);
+        digitalWrite(_pin2, LOW);
+        digitalWrite(_pin3, LOW);
+        digitalWrite(_pin4, LOW);
+        digitalWrite(_pin5, HIGH);
+        digitalWrite(_pin6, HIGH);
+        digitalWrite(_pin7, LOW);
+    }
+    if(element_id == 5){                // Element 5 -> "O"
+        digitalWrite(_pin1, HIGH);
+        digitalWrite(_pin2, HIGH);
+        digitalWrite(_pin3, HIGH);
+        digitalWrite(_pin4, HIGH);
+        digitalWrite(_pin5, HIGH);
+        digitalWrite(_pin6, HIGH);
+        digitalWrite(_pin7, LOW);
+    }
+    if(element_id == 6){                // Element 6 -> "-"
+        digitalWrite(_pin1, LOW);
+        digitalWrite(_pin2, LOW);
+        digitalWrite(_pin3, LOW);
+        digitalWrite(_pin4, LOW);
+        digitalWrite(_pin5, LOW);
+        digitalWrite(_pin6, LOW);
         digitalWrite(_pin7, HIGH);
     }
 }
